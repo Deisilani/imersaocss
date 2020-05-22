@@ -1,0 +1,261 @@
+* { /*CSS reset,utilizar o *. Serve para tirar as bordas, pading e boxsizing que o HTML coloca*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+  margin-right: 10em;
+}
+
+body {
+  background-color: white;
+   background-image: url('./img/lilasclaro.jpg');
+    background-size: 100vh;
+    font-family: 'Bellota Text', cursive;
+    height: 100vh;
+    font-size: 25px;
+  }
+
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+figcaption{
+    color:snow;
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    padding: 1.5em;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    
+}
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 2s, color 2s;
+  }
+
+  .menu a:hover{
+    background-color: black;
+    color: mediumpurple;
+  }
+
+  .menu{
+    background-color: snow;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    font-size: 1.5em;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  a{
+    
+    color: MEDIUMPURPLE;
+    text-decoration: none;
+    font-family: 'Cutive Mono', monospace;
+    
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+.site-title {
+    color: snow;
+      font-size: 3em;
+      font-family: 'Indie Flower', cursive;
+      text-align: center;
+      /*margin-right: 10cm;*/
+      text-shadow: 0px 0px 15px rgb(127, 38, 185);
+  }
+    
+  .site-segtitle{
+    color: purple;
+      font-size: 1.5em;
+      font-family: 'Cutive Mono', monospace;
+      text-align: center;
+      text-shadow: 0px 0px 15px rgb(30, 10, 209);
+  }
+  
+  .portfolio-title {
+   
+    font-size: 2.5em;
+    font-family: 'Cutive Mono', monospace;
+    color: mediumpurple;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgb(95, 154, 221);
+    padding: 1.5em;
+    }
+
+    
+    .myfoto{
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0em 0em 0.5em 0.8em rgba(3, 10, 97, 0.32);
+      align-content: center;
+      justify-content: center;
+     
+  }
+    
+  .sobre .myfoto{
+    float: right;
+    margin-left: 2em;
+  }
+    .sobre h2{
+     text-align: center; 
+    }
+
+    .sobre p {
+      color: snow;
+      text-indent: 1.4em;
+      margin-bottom: 1.5em;
+      text-align: justify;
+    }
+
+.redes-title {
+    color: mediumpurple;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 2.5em;
+    background-color:snow;
+    text-align: center;
+    text-shadow: 0px 0px 15px rgb(95, 154, 221);
+    padding: 1em;
+    
+  }
+  .img-portfolio{
+      height: 180px;
+      min-width: 100px;
+      object-fit: cover;
+      object-position: bottom;
+      transition: transform 500ms;
+      border-radius: 7%;
+      box-shadow: 0 30px 60px rgba(47, 46, 47, 0.62);
+      }
+
+  .img-portfolio:hover{
+    transform: scale(1.3) ;
+  }
+div.foto {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;   
+}
+
+#forTyping {
+  font-size: 2em;
+  height: 2em;
+  color: var(--main-bg-color);
+}
+
+.grid {
+  background-color: snow;
+  justify-content: space-around;
+  padding: 1em; 
+  font-size: 5em;
+  padding: 1.5em;
+}
+
+@media (min-width: 560px) {
+  .grid {
+    display: flex;
+    gap: 2em;
+    grid-template-columns: 240px 240px;
+  }
+
+}
+
+@media (min-width: 880px) {
+  .grid {
+    display: flex;
+    gap: 2em;
+    grid-template-columns: 240px 240px 240px;
+  }
+}
+
+.redes a:active,  /*Para utilizar no celular*/
+.redes a:hover {
+text-decoration: none;
+text-shadow: 0px 0px 15px rgba(78, 164, 214, 0.945);
+
+}
+
+.titulo{
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+
+  animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+ 
+  100%{
+    transform: scale(1) translateY(0);
+   opacity: 1;
+  }
+}
+
+
+.sobre,
+.sobre h2 {
+ padding: 2em;
+min-width: 100vh;
+ }
+
+.sobre a{
+  color: rgb(236, 31, 24, 5);
+}
+
+.sobre-title {
+  color: mediumpurple;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 2.5em;
+  text-shadow: 0px 0px 15px rgb(95, 154, 221);
+}
+
+@media (min-width: 1200px){
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+
+}
+}
+
+
+

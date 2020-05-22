@@ -1,0 +1,108 @@
+* { /*CSS reset,utilizar o *. Serve para tirar as bordas, pading e boxsizing que o HTML coloca*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+   background-image: url('./img/lilasglitter.jpg');
+    background-size: 100vh;
+    font-family: cursive;
+    height: 100vh;
+    font-size: 25px;
+  }
+
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-widht: 400px) {
+    body {
+        font-size: 15px;
+    }
+}
+/* breakpoint */
+@media (min-widht: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+figcaption{
+    color: mediumpurple;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    
+}
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .menu{
+    background-color: snow;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  a{
+    color: MEDIUMPURPLE;
+    text-decoration: none;
+    
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: INDIGO;
+    text-align: center;
+
+  }
+
+  .site-title {
+      font-size: 4em;
+
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
+
+  .portfolio-subtitle {
+    display: block;
+    padding: 3em;
+    text-align: center;
+   background: white;
+    font-family: cursive;
+    color: mediumpurple;
+}
+
+  .img-portfolio{
+      height: 180px;
+      width: 180px;
+      }
+
+div.foto {
+    display: flex;
+    justify-content: space-around;
+   background-color:white; 
+    
+}
