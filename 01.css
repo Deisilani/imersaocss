@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-.navbar-brand {
-  margin-right: 10em;
-}
+
 
 body {
   background-color: white;
@@ -53,6 +51,12 @@ header {
     align-items: center;
     
 }
+
+@media (min-width: 360px) {
+  html {
+      font-size: 12px;
+  }
+}
   .menu a{
     display: block;
     padding: 10px 20px;
@@ -64,6 +68,7 @@ header {
     color: mediumpurple;
   }
 
+  
   .menu{
     background-color: snow;
     position: fixed;
